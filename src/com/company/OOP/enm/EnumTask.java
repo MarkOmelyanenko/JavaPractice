@@ -7,5 +7,7 @@ public class EnumTask {
 
         Meeting meeting = new Meeting("Family trip", Day.SUNDAY);
         meeting.printMeeting();
+
+        System.out.println("\n" + Color.RED.getCode());
     }
 }
