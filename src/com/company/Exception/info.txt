@@ -1,0 +1,26 @@
+Throwable - basic class
+
+It has two children:  Error and Exception
+
+The Error class describes internal errors in the Java runtime environment
+
+Exceptions are inherited from the Exception class
+
+RuntimeException is the base class for the unchecked exceptions. The compiler does not
+check the fact that such exceptions are processed and it is possible not to specify them
+together with the throws operator in the method declaration. FOR EXAMPLE:
+    ArithmeticException(dividing by 0)
+    IndexOutOfBoundException
+    IllegalArgumentException
+    NullPointerException
+    NumberFormatException
+
+All other Exception's children are called verifiable exceptions. FOR EXAMPLE:
+    CloneNotSupportedException - the class for whose object cloning is called does
+                                 not implement the Cloneable interface
+    InterruptedException - the stream is interrupted by another stream
+    ClassNotFoundException - the class cannot be found
+
+The getMessage() method returns an exception message
+The getStackTrace() method returns an array containing the stack trace of the exception
+The printStackTrace() method displays the stack trace
